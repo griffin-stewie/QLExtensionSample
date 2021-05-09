@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreviewViewController" customModule="GeoJSONPreview" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="XHN-EZ-Hpe" id="6d5-vo-ujl"/>
+                <outlet property="view" destination="c22-O7-iKe" id="NRM-P4-wb6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" userLabel="Preview View">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="800"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-EZ-Hpe">
+                    <rect key="frame" x="0.0" y="0.0" width="800" height="800"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="STK-Jh-z7J"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XHN-EZ-Hpe" secondAttribute="bottom" id="125-fl-mac"/>
+                <constraint firstItem="XHN-EZ-Hpe" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Nh7-YV-Z6T"/>
+                <constraint firstAttribute="trailing" secondItem="XHN-EZ-Hpe" secondAttribute="trailing" id="SAE-YM-QGI"/>
+                <constraint firstItem="XHN-EZ-Hpe" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="m4A-YH-9qM"/>
+            </constraints>
+            <point key="canvasLocation" x="266.5" y="-28.5"/>
+        </customView>
+    </objects>
+</document>
